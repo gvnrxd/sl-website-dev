@@ -91,8 +91,12 @@ html {
 
 /* General Page Styles */
 .banner {
-  width: calc(100% + (var(--space-2xs)) * 2);
-  margin-inline: calc(var(--space-2xs) * -1);
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
   background-color: var(--blue5);
   padding: var(--space-s);
   text-align: center;
@@ -103,8 +107,12 @@ html {
   font-family: var(--playfair);
 }
 .banner2 {
-  width: calc(100% + (var(--space-2xs)) * 2);
-  margin-inline: calc(var(--space-2xs) * -1);
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
   background-color: var(--green1);
   padding: var(--space-s);
   text-align: center;
