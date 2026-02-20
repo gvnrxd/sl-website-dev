@@ -1,0 +1,10 @@
+.card {
+  background-color: white;
+  border-radius: var(--radius-s);
+  padding: var(--space-s);
+  border: 1px solid var(--black8);
+}
+
+.number {
+  font-size: var(--step-4);
+}

@@ -1,0 +1,84 @@
+/* Hero Section Styles */
+.hero {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  min-height: 80dvh;
+  background: url("../../assets/icons/wave.svg") bottom / 150% 50% no-repeat;
+}
+
+.heroContent {
+  padding: var(--space-l) var(--space-xs);
+  padding-right: 0;
+  padding-bottom: 0;
+  width: 80%;
+}
+.heroContent h1 {
+  font-size: var(--step-5);
+  font-family: var(--playfair);
+  font-weight: bolder;
+  line-height: 1;
+  position: relative;
+  z-index: 2;
+}
+.heroContent p {
+  margin-top: var(--space-s);
+  font-size: var(--step-0);
+  font-weight: 600;
+  z-index: 2;
+  position: relative;
+}
+
+.heroContent img {
+  width: 150px;
+  height: auto;
+  border-radius: var(--radius-full);
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: 66%;
+  left: 80%;
+  transform: translate(-55%, -60%);
+  z-index: 1;
+}
+
+.btnCtnr {
+  width: 200px;
+  margin-top: var(--space-m);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+.btnCtnr a {
+  z-index: 2;
+  position: relative;
+}
+
+.heroExtra {
+  margin-bottom: var(--space-2xs);
+}
+.checkMarkCtnr {
+  margin: var(--space-2xs) 0;
+  gap: var(--space-2xs);
+  display: flex;
+}
+.checkMark {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--black9);
+}
+
+.imgCtnr {
+  display: flex;
+  justify-content: center;
+}
+.imgCtnr img {
+  width: 90%;
+  border-radius: var(--radius-m);
+}

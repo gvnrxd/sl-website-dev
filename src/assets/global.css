@@ -1,0 +1,174 @@
+:root {
+  --step--2: clamp(0.7813rem, 0.7813rem + 0.015vw, 0.8rem);
+  --step--1: clamp(0.9375rem, 0.9375rem + 0.05vw, 1rem);
+  --step-0: clamp(1.125rem, 1.125rem + 0.1vw, 1.25rem);
+  --step-1: clamp(1.35rem, 1.35rem + 0.17vw, 1.5625rem);
+  --step-2: clamp(1.62rem, 1.62rem + 0.2665vw, 1.9531rem);
+  --step-3: clamp(1.944rem, 1.944rem + 0.3979vw, 2.4414rem);
+  --step-4: clamp(2.3328rem, 2.3328rem + 0.5752vw, 3.0518rem);
+  --step-5: clamp(2.7994rem, 2.7994rem + 0.8123vw, 3.8147rem);
+  --step-6: clamp(3.3592rem, 3.3592rem + 1.1273vw, 4.7684rem);
+  --step-7: clamp(4.0311rem, 4.0311rem + 1.5435vw, 5.9605rem);
+
+  --space-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
+  --space-2xs: clamp(0.5625rem, 0.5625rem + 0.05vw, 0.625rem);
+  --space-xs: clamp(0.875rem, 0.875rem + 0.05vw, 0.9375rem);
+  --space-s: clamp(1.125rem, 1.125rem + 0.1vw, 1.25rem);
+  --space-m: clamp(1.6875rem, 1.6875rem + 0.15vw, 1.875rem);
+  --space-l: clamp(2.25rem, 2.25rem + 0.2vw, 2.5rem);
+  --space-xl: clamp(3.375rem, 3.375rem + 0.3vw, 3.75rem);
+  --space-2xl: clamp(4.5rem, 4.5rem + 0.4vw, 5rem);
+  --space-3xl: clamp(6.75rem, 6.75rem + 0.6vw, 7.5rem);
+
+  /* One-up pairs */
+  --space-3xs-2xs: clamp(0.3125rem, 0.3125rem + 0.25vw, 0.625rem);
+  --space-2xs-xs: clamp(0.5625rem, 0.5625rem + 0.3vw, 0.9375rem);
+  --space-xs-s: clamp(0.875rem, 0.875rem + 0.3vw, 1.25rem);
+  --space-s-m: clamp(1.125rem, 1.125rem + 0.6vw, 1.875rem);
+  --space-m-l: clamp(1.6875rem, 1.6875rem + 0.65vw, 2.5rem);
+  --space-l-xl: clamp(2.25rem, 2.25rem + 1.2vw, 3.75rem);
+  --space-xl-2xl: clamp(3.375rem, 3.375rem + 1.3vw, 5rem);
+  --space-2xl-3xl: clamp(4.5rem, 4.5rem + 2.4vw, 7.5rem);
+
+  /* Custom pairs */
+  --space-s-l: clamp(1.125rem, 1.125rem + 1.1vw, 2.5rem);
+
+  /* Border Radius Scale */
+  --radius-3xs: 2px;
+  --radius-2xs: 4px;
+  --radius-xs: 6px;
+  --radius-s: 8px;
+  --radius-m: 12px;
+  --radius-l: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px; /* Fully rounded/pill */
+
+  /* Fonts */
+  --playfair: playfair-display, serif;
+  --interFace: interface, sans-serif;
+  /* Color Scheme */
+  --white: #ffffff;
+  --white1: #fafaf7;
+  --white2: #f8f9fa;
+  --white3: #f5f5f5;
+
+  --black: #000000;
+  --black1: #121212;
+  --black2: #1e1e1e;
+  --black3: #1a1a1a;
+  --black4: #333333;
+  --black5: #4d4d4d;
+  --black6: #181a1b;
+  --black7: #999999;
+  --black8: #b3b3b3;
+  --black9: #808080;
+
+  --blue: #012447;
+  --blue1: #023161;
+  --blue2: #023e7a;
+  --blue3: #034b94;
+  --blue4: #0358ad;
+  --blue5: #0466c8;
+
+  --green: #16a34b;
+  --green1: #138a3f;
+  --green2: #0f7034;
+  --green3: #0c5728;
+  --green4: #083d1c;
+  --green5: #052410;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--interFace);
+}
+
+html {
+  background-color: var(--white1);
+}
+
+/* General Page Styles */
+.banner {
+  width: calc(100% + (var(--space-2xs)) * 2);
+  margin-inline: calc(var(--space-2xs) * -1);
+  background-color: var(--blue5);
+  padding: var(--space-s);
+  text-align: center;
+  color: var(--white1);
+}
+.banner h2 {
+  font-weight: 1;
+  font-family: var(--playfair);
+}
+.banner2 {
+  width: calc(100% + (var(--space-2xs)) * 2);
+  margin-inline: calc(var(--space-2xs) * -1);
+  background-color: var(--green1);
+  padding: var(--space-s);
+  text-align: center;
+  color: var(--white1);
+}
+.banner2 h2 {
+  font-weight: 1;
+  font-family: var(--playfair);
+}
+
+/* Styles for Page Headers */
+.pageHeader {
+  text-align: center;
+  margin-bottom: var(--space-l);
+}
+.pageHeader h2 {
+  font-size: var(--step-3);
+  position: relative;
+  display: inline-block;
+  margin-bottom: var(--space-2xs);
+}
+.pageHeader h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 5px;
+  border-radius: var(--radius-2xs);
+  background-color: var(--blue2);
+}
+.pageHeader p {
+  font-size: var(--step-0);
+  width: 90%;
+  margin: 0 auto;
+}
+
+.pageHeader2 {
+  margin-bottom: var(--space-l);
+}
+.pageHeader2 h2 {
+  font-size: var(--step-3);
+  position: relative;
+  display: inline-block;
+  margin-bottom: var(--space-2xs);
+}
+.pageHeader2 h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 5px;
+  border-radius: var(--radius-2xs);
+  background-color: var(--blue2);
+}
+.pageHeader2 p {
+  font-size: var(--step-0);
+  margin: 0 auto;
+}
+
+/* Styling for sections */
+section {
+  padding: var(--space-s) 0;
+}

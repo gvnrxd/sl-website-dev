@@ -1,0 +1,56 @@
+footer {
+  background-color: var(--blue1);
+  color: white;
+  padding: var(--space-m) var(--space-s);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3xs);
+}
+.icon span {
+  color: white;
+  font-size: var(--step-1);
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--space-3xs);
+  gap: var(--space-3xs);
+  font-size: var(--step--1);
+}
+
+.bottom {
+  border-top: 1px solid rgb(185, 183, 183);
+  padding: var(--space-s) 0;
+}
+
+.logoCtnr img {
+  height: clamp(28px, 4vw, 40px);
+  width: auto;
+  margin: 0 auto;
+  display: block;
+  display: flex;
+}
+
+.cc {
+  text-align: center;
+  color: rgb(185, 183, 183);
+  margin-top: var(--space-3xs);
+  font-size: var(--step--1);
+}
+
+.credits {
+  text-align: center;
+  color: rgb(185, 183, 183);
+  font-size: var(--step--2);
+}
+.credits a {
+  color: inherit;
+}
