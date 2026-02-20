@@ -11,7 +11,7 @@ export default function LandingLayout() {
       <div>
         <Header />
       </div>
-      <main>
+      <main className={styles.main}>
         <Outlet />
       </main>
       <div>
